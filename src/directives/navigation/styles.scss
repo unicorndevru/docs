@@ -1,0 +1,31 @@
+docs-navigation {
+
+  .modules {
+    h3 {
+      padding-top: 0px;
+      margin: 0px;
+    }
+  }
+
+  .main-page {
+    h3 {
+      position: relative;
+      left: -1.2em;
+    }
+  }
+
+  ul {
+    margin: 0.5em;
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin-right: 1em;
+
+      .highlight {
+        background-color: #EDF10B;
+      }
+    }
+  }
+
+
+}

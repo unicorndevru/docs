@@ -1,0 +1,32 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf public",
+    "server-dev": "source ./env/development.sh && babel-node ./src/index.js",
+    "server-prod": "source ./env/production.sh && babel-node ./src/index.js",
+    "front-dev": "source ./env/development.sh && npm run clean && webpack --config ./webpack/config.babel.js --watch",
+    "front-prod": "source ./env/development.sh && npm run clean && webpack --config ./webpack/config.babel.js -p"
+  },
+  "author": "Dmitriy Kharchenko",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^6.2.3",
+    "environmental": "^1.2.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "hash-webpack-plugin": "0.0.5",
+    "one-json-config": "0.0.5",
+    "postcss-bem": "^0.4.1",
+    "postcss-custom-media": "^5.0.0",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-import": "^7.1.3",
+    "postcss-mixins": "^3.0.2",
+    "postcss-nested": "^1.0.0",
+    "ramda": "^0.19.1",
+    "webpack": "^1.12.10",
+    "webpack-manifest-plugin": "^0.5.0"
+  }
+}

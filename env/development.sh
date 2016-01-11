@@ -1,0 +1,6 @@
+export NODE_APP_PREFIX="DOCS"
+export DOCS_ENV="development"
+export DOCS_APP_PORT="3000"
+export DOCS_ASSETS_DIST="/public"
+export DOCS_ASSETS_PUBLICPATH="/"
+export DOCS_ASSETS_MANIFEST="manifest.json"

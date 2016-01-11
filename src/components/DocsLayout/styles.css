@@ -1,0 +1,5 @@
+@component docView {
+  @descendent container {
+    padding: 1em;
+  }
+}

@@ -1,0 +1,10 @@
+@component Navigation {
+  ul {
+    padding: 0px;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+    }
+  }
+}

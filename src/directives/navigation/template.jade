@@ -1,0 +1,17 @@
+
+section.search.mt1.mb2
+  md-content
+    md-input-container
+      label search for recipes
+      input(ng-model="search")
+
+
+  div(layout="row" ng-repeat="group in documents")
+    
+    div(flex="100")
+      span
+       | {{ group.label }}:
+      ul
+        li(ng-repeat="doc in group.children | filter:search")
+          a.ref(ui-sref="docs.{{ group.name }}.{{ doc.name }}()" md-highlight-text="search" md-highlight-flags="i")
+            | {{ doc.label }}
